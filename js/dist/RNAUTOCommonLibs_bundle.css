@@ -1,0 +1,144 @@
+.PropertyItem{
+    display: block;
+}
+
+.rnAccordionContent > .PropertyItem:not(:first-child){
+    margin-top: 3px;
+}
+
+.formulaRemove,.formulaIcon{
+    transition: color 200ms ease-in-out;
+}
+
+.formulaRemove:hover,.formulaIcon:hover{
+    color: red!important;
+}
+
+.PropertyLabel{
+    margin-bottom: 1px;
+    display: block;
+}
+
+.propertySetting.inline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PropertyItem{
+    margin-bottom: 10px;
+}
+
+.serverItem{
+    padding: 10px;
+    margin:0;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+}
+
+.serverItem:not(:first-child)
+{
+    border-top: 1px solid #fafafa;
+}
+
+.serverItem:hover{
+    background-color: #fafafa;
+
+}
+.ConditionRemove{
+    transition: color ease-in-out 200ms;
+}
+.ConditionRemove:hover{
+    color:red;
+}
+.condition-datepicker{
+    height: 25px !important;
+    padding:5px 6px !important;
+    width: 100%;
+}
+
+.react-datepicker-popper{
+    z-index: 1000000000000 !important;
+}
+
+.react-datepicker-wrapper{
+    width: 100% !important;
+}
+
+.react-datepicker__input-container{
+    width: 100% !important;
+}
+
+
+.react-datepicker__time-list,.react-datepicker__time-box,.react-datepicker__time,.react-datepicker__time-container{
+    width: 100px !important;
+}
+
+
+.rnMultipleComparisonSelect__input input{
+    height: 20px!important;
+    min-height: 20px !important;
+}
+
+.rnMultipleComparisonSelect__control{
+    background-color: white;
+}
+
+.rnMultipleComparisonSelect--is-disabled .rnMultipleComparisonSelect__value-container,
+.rnMultipleComparisonSelect--is-disabled .rnMultipleComparisonSelect__indicators{
+    background-color: #e9ecef;
+}
+
+.rnMultipleComparisonSelect.rnInvalidCondition .rnMultipleComparisonSelect__control
+{
+    border-color: red;
+}
+.rnUserDynamic__input input{
+    height: 20px!important;
+    min-height: 20px !important;
+}
+.rnUserDynamic__control{
+    background-color: white;
+}
+
+
+.conditionLine .rnInvalidCondition .rnUserDynamic__control
+{
+    border-color: red;
+}
+.serverItem{
+    cursor: pointer;
+}
+
+.serverItem:not(:last-child){
+    border-bottom: 1px solid #efefef;
+}
+
+.serverItem:hover{
+    background-color: #fefefe;
+}
+
+.propertySetting.inline rn-inputs-select{
+    min-width: 50%;
+}
+rn-inputs-select .ts-input{
+    padding-left: 13px !important;
+}
+
+.ts-dropdown-content .spinner{
+    visibility: visible;
+    margin:0;
+    background: none;
+    width: 100%;
+    height: 50px;
+}
+.rnIcon{
+    color:#888;
+    cursor: pointer;
+    transition: color 200ms ease-in-out;
+}
+
+
+.rnIcon:hover{
+    color:red;
+}

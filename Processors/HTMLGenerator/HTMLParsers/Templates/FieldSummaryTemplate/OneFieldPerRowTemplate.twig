@@ -1,0 +1,38 @@
+{# @var Model \rednaoeasycalculationforms\core\Managers\HTMLGenerator\HTMLParsers\Templates\FieldSummaryTemplate\OneFieldPerRowTemplate #}
+
+
+<style>
+
+    .oneFieldPerRow > tbody > tr.even:not(:last-child) td{
+        border-bottom: 1px solid #ccc;
+    }
+
+    .oneFieldPerRow > tbody > tr:nth-child(odd) td
+    {
+        color:#333333;
+        padding-top: 20px;
+        padding-bottom: 3px;
+        font-weight: bold;
+    }
+
+    .oneFieldPerRow > tbody > tr:nth-child(even) td
+    {
+        color:#555555;
+        padding-top: 3px;
+        padding-bottom: 20px;
+    }
+
+</style>
+
+<table class="oneFieldPerRow" width="100%">
+    <tbody>
+        {% for currentField in Model.Fields %}
+            <tr>
+                <td>{{ currentField.GetLabel }}</td>
+            </tr>
+            <tr class="even">
+                <td>{{ currentField.GetHtml() }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

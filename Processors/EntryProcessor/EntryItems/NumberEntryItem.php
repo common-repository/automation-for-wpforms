@@ -1,0 +1,51 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Edgar
+ * Date: 3/22/2019
+ * Time: 5:50 AM
+ */
+
+namespace RNAUTO\Processors\EntryProcessor\EntryItems;
+
+
+use RNAUTO\Processors\EntryProcessor\EntryItems\Core\EntryItemBase;
+
+class NumberEntryItem extends EntryItemBase
+{
+    public $Value;
+    public function SetValue($value)
+    {
+        $this->Value=$value;
+        return $this;
+    }
+
+    public function InitializeWithString($field,$stringValue)
+    {
+        $this->Field=null;
+        $this->Value=$stringValue;
+
+    }
+
+
+    public function GetText($pathId='')
+    {
+        return $this->Value;
+    }
+
+    public function GetType()
+    {
+        return 'number';
+    }
+
+    public function IsEmpty()
+    {
+        return floatval($this->Value)=='0';
+    }
+
+
+
+
+
+
+}

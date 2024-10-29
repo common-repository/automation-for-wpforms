@@ -1,0 +1,97 @@
+
+#adminmenu{
+    display: block !important;
+}
+
+ul li{
+    list-style: none !important;
+    list-style-position: unset !important;
+
+}
+
+
+body{
+    overflow: auto !important;
+}
+
+#diagram{
+    background-color: white;
+    border:1px solid #ccc;
+    padding:10px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.inside{
+    margin:0 !important;
+}
+
+.tableAction td{
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+.tableAction .title{
+    font-weight: bold;
+}
+
+.tableAction .description{
+    font-style: italic;
+}
+
+.actionItem{
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+}
+
+.actionItem:hover{
+    background-color: #fcfcfc;
+}
+
+.propertySetting{
+    background-color: transparent !important;
+}
+
+rn-edit-entry-item-control .rednaoLabel {
+    display: none !important;
+}
+
+rn-check-box-property input[type=checkbox]
+{
+    margin:0;
+}
+
+
+#app.settings,#app.settings .rnWorkFlowBuilder,#app.settings .rnSettingsContainer,#app.settings rnaut-workflow-builder{
+    height: auto !important;
+}
+
+.diagramNode{
+    background-color: rgba(255,255,255,.9);
+    z-index: 1000000000000000;
+}
+
+.jtk-default-label{
+    padding:3px;
+    background-color: rgba(255,255,255,.9);
+    z-index: 100000;
+}
+
+.jtk-connector:hover{
+    z-index: 10000;
+}
+
+.jtk-connector:hover path{
+    stroke:red;
+}
+.diagramIcon{
+    color:#ccc;
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.diagramIcon:hover{
+    color:red;
+    opacity:1;
+}
